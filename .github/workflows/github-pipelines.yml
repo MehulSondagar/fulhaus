@@ -14,8 +14,8 @@ jobs:
         with:
           token: ${{secrets.github_token}}
 
-        - name: Print Build Number
-          run: echo "Build number is $BUILD_NUMBER"
+      - name: Print Build Number
+        run: echo "Build number is $BUILD_NUMBER"
 
-        - name: Build Docker Image
-          run: ${PWD}/build-docker
+      - name: Build Docker Image
+        run: ${PWD}/build-docker
